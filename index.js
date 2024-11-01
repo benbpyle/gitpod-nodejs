@@ -4,7 +4,11 @@ const port = 3000;
 
 // Define a simple route
 app.get("/", (req, res) => {
-  res.send("Hello World Again and Again? Please!");
+  console.log("About to return");
+  let o = {
+    "foo": "bar"
+  };
+  res.json(o);
 });
 
 // Start the server
